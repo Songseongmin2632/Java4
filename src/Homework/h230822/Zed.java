@@ -14,12 +14,12 @@ class Abilities {
 		public int Range=125;
 		public int MovementSpeed=345;
 		public int[] Level=new int[18];
-		public String Difficulty="ìƒ";
-		public String DamageAbility="ìƒ";
-		public String DefenseAbility="í•˜";
-		public String CrowdControlAbility="í•˜";
-		public String MovementAbility="ìƒ";
-		public String AssistiveAbility="í•˜";
+		public String Difficulty="»ó";
+		public String DamageAbility="»ó";
+		public String DefenseAbility="ÇÏ";
+		public String CrowdControlAbility="ÇÏ";
+		public String MovementAbility="»ó";
+		public String AssistiveAbility="ÇÏ";
 				
 		Abilities() {
 			for(int i=0; i<Level.length; i++) {
@@ -39,51 +39,62 @@ class Abilities {
 }
 
 	class Voice {
-		public String PickVoice="ë³´ì´ì§€ ì•ŠëŠ” ê²€ì´ ê°€ì¥ ë¬´ì„œìš´ ë²•";
-		public String[] MovementVoices= 
-	   {"ì†Œë¦¬ì—†ì´.","ê¸ˆê¸° ë”°ìœˆ ìƒê´€ ì•ˆ í•´.","ê·¸ë¦¼ìë‹¨ì´ì—¬, ìš©ê°í•˜ê²Œ ì§„ì‹¤ì„ ì°¾ì•„ë¼.",
-		"ê°€ë ¤ì§„ ê¸¸ì´ë¼ í•´ë„ ë‘ë ¤ìš¸ ê±´ ì—†ì–´."+"ê· í˜• ê°™ì€ ì†Œë¦¬ í•˜ì§€ ë§ˆ.",
-		"ë¹„ê¸‰ì´ë¼ë‹ˆ, ì•„ê»´ ë‘ë©´ ë¬´ìŠ¨ ì†Œìš©ì´ì•¼.","ê·¸ë¦¼ìê°€ ë‚˜ë¥¼ ì¼ê¹¨ì› ë‹¤.",
-		"ê· í˜•ì€ ì•½ì ì¼ ë¿ì´ì•¼.","ì§„ì‹¤ì€ ë°”ë¡œ ì–´ë‘  ì†ì— ìˆì§€.",
-		"í˜„ëª…í•œ ìë¼ë©´ ì „í†µì— ì—°ì—°í•˜ì§€ ì•Šì•„.","ì—ì§€ë¥¸ ë¬¼ì€ ì£¼ì›Œë‹´ì„ ìˆ˜ ì—†ì–´."};		
-		public String[] AttackVoices=
-	   {"ê°€ì¹˜ìˆëŠ” ìë§Œ ì‚´ì•„ë‚¨ëŠ” ê±°ì•¼.","ë‚˜ëŠ” ì–´ë‘  ì†ì— ìˆ¨ì€ ê²€ì´ë‹¤!",
-		"ìˆ¨í†µì„ ëŠì–´ ì£¼ë§ˆ.","ì†ë°•ì˜ êµ´ë ˆë¥¼ ë²—ì–´.","ê°€ìŠ´ ì†ì— ê·¸ë¦¼ìê°€ ìˆì§€.",
-		"ë‚˜ë¥¼ ë¶€ì •í•˜ì§€ ë§ˆ.","ì—‰ëš±í•œ ìŠ¤ìŠ¹ì„ ë”°ëêµ°.","ì•„ë¬´ë„ ê·¸ë¦¼ìë¥¼ í”¼í•  ìˆ˜ ì—†ë‹¤.",
-		"ë¬´ì§€í•œ ë†ˆë“¤."};		
+		public String PickVoice="º¸ÀÌÁö ¾Ê´Â °ËÀÌ °¡Àå ¹«¼­¿î ¹ı";
+		public String MovementVoices= 
+	    "¼Ò¸®¾øÀÌ.\r\n"
+	   +"±İ±â µûÀ© »ó°ü ¾È ÇØ.\r\n"
+	   +"±×¸²ÀÚ´ÜÀÌ¿©, ¿ë°¨ÇÏ°Ô Áø½ÇÀ» Ã£¾Æ¶ó.\r\n"
+	   +"°¡·ÁÁø ±æÀÌ¶ó ÇØµµ µÎ·Á¿ï °Ç ¾ø¾î.\r\n"
+	   +"±ÕÇü °°Àº ¼Ò¸® ÇÏÁö ¸¶.\r\n"
+	   +"ºñ±ŞÀÌ¶ó´Ï, ¾Æ²¸ µÎ¸é ¹«½¼ ¼Ò¿ëÀÌ¾ß.\r\n"
+	   +"±×¸²ÀÚ°¡ ³ª¸¦ ÀÏ±ú¿ü´Ù.\r\n"
+	   +"±ÕÇüÀº ¾àÁ¡ÀÏ »ÓÀÌ¾ß.\r\n"
+	   +"Áø½ÇÀº ¹Ù·Î ¾îµÒ ¼Ó¿¡ ÀÖÁö.\r\n"
+	   +"Çö¸íÇÑ ÀÚ¶ó¸é ÀüÅë¿¡ ¿¬¿¬ÇÏÁö ¾Ê¾Æ.\r\n"
+	   +"¾şÁö¸¥ ¹°Àº ÁÖ¿ö´ãÀ» ¼ö ¾ø¾î.";		
+		public String AttackVoices=
+	    "°¡Ä¡ÀÖ´Â ÀÚ¸¸ »ì¾Æ³²´Â °Å¾ß.\r\n"
+	   +"³ª´Â ¾îµÒ ¼Ó¿¡ ¼ûÀº °ËÀÌ´Ù!\r\n"
+	   +"¼ûÅëÀ» ²÷¾î ÁÖ¸¶.\r\n"
+	   +"¼Ó¹ÚÀÇ ±¼·¹¸¦ ¹ş¾î.\r\n"
+	   +"°¡½¿ ¼Ó¿¡ ±×¸²ÀÚ°¡ ÀÖÁö.\r\n"		
+	   +"³ª¸¦ ºÎÁ¤ÇÏÁö ¸¶.\r\n"
+	   +"¾û¶×ÇÑ ½º½ÂÀ» µû¶ú±º.\r\n"
+	   +"¾Æ¹«µµ ±×¸²ÀÚ¸¦ ÇÇÇÒ ¼ö ¾ø´Ù.\r\n"
+	   +"¹«ÁöÇÑ ³ğµé.";		
 	}
 	class Skill {
 		public String PassiveSkill=
-	    "ì•½ì ë©¸ì‹œ(Contempt for the Weak)\r\n"
-	   +"ì œë“œê°€ ì²´ë ¥ 50% ì´í•˜ì¸ ì ì„ ê¸°ë³¸ ê³µê²©í•˜ë©´ ëŒ€ìƒì˜ ìµœëŒ€ ì²´ë ¥ì— ë¹„ë¡€í•œ ë§ˆë²• í”¼í•´ë¥¼ ì¶”ê°€ë¡œ ì…í™ë‹ˆë‹¤.\r\n"
-	   +"ê°™ì€ ì  ì±”í”¼ì–¸ì—ê²ŒëŠ” ì´ íš¨ê³¼ê°€ 10ì´ˆì— í•œ ë²ˆì”©ë§Œ ì ìš©ë©ë‹ˆë‹¤.\r\n"
-	   +"ì—í”½ ëª¬ìŠ¤í„° ìƒëŒ€ ìµœëŒ€ í”¼í•´ëŸ‰ì€ 300ì…ë‹ˆë‹¤.\r\n"
-	   +"ì •ê¸€ ëª¬ìŠ¤í„°ì—ê²Œ 200%ì˜ í”¼í•´ë¥¼ ì…í™ë‹ˆë‹¤.\r\n"
-	   +"ë§ˆë²•í”¼í•´ ëŒ€ìƒ ìµœëŒ€ ì²´ë ¥ì˜ 6 / 8 / 10%";
+	    "¾àÀÚ ¸ê½Ã(Contempt for the Weak)\r\n"
+	   +"Á¦µå°¡ Ã¼·Â 50% ÀÌÇÏÀÎ ÀûÀ» ±âº» °ø°İÇÏ¸é ´ë»óÀÇ ÃÖ´ë Ã¼·Â¿¡ ºñ·ÊÇÑ ¸¶¹ı ÇÇÇØ¸¦ Ãß°¡·Î ÀÔÈü´Ï´Ù.\r\n"
+	   +"°°Àº Àû Ã¨ÇÇ¾ğ¿¡°Ô´Â ÀÌ È¿°ú°¡ 10ÃÊ¿¡ ÇÑ ¹ø¾¿¸¸ Àû¿ëµË´Ï´Ù.\r\n"
+	   +"¿¡ÇÈ ¸ó½ºÅÍ »ó´ë ÃÖ´ë ÇÇÇØ·®Àº 300ÀÔ´Ï´Ù.\r\n"
+	   +"Á¤±Û ¸ó½ºÅÍ¿¡°Ô 200%ÀÇ ÇÇÇØ¸¦ ÀÔÈü´Ï´Ù.\r\n"
+	   +"¸¶¹ıÇÇÇØ ´ë»ó ÃÖ´ë Ã¼·ÂÀÇ 6 / 8 / 10%";
 		public String FirstSkill=
-		"Q-ì˜ˆë¦¬í•œ í‘œì°½(Razor Shuriken)\r\n"
-	   +"ì œë“œì™€ ê·¸ë¦¼ìê°€ í‘œì°½ì„ ë˜ì ¸, ê°ê° ì²˜ìŒ ë§ëŠ” ì ì—ê²Œ ë¬¼ë¦¬ í”¼í•´ë¥¼ ì…íˆê³ \r\n"		
-	   +"ì´í›„ ì¶”ê°€ë¡œ ë§íˆëŠ” ì ì—ê²ŒëŠ” ê°ê° 60%ì˜ ë¬¼ë¦¬ í”¼í•´ë¥¼ ì…í™ë‹ˆë‹¤."; 
+		"Q-¿¹¸®ÇÑ Ç¥Ã¢(Razor Shuriken)\r\n"
+	   +"Á¦µå¿Í ±×¸²ÀÚ°¡ Ç¥Ã¢À» ´øÁ®, °¢°¢ Ã³À½ ¸Â´Â Àû¿¡°Ô ¹°¸® ÇÇÇØ¸¦ ÀÔÈ÷°í\r\n"		
+	   +"ÀÌÈÄ Ãß°¡·Î ¸ÂÈ÷´Â Àû¿¡°Ô´Â °¢°¢ 60%ÀÇ ¹°¸® ÇÇÇØ¸¦ ÀÔÈü´Ï´Ù."; 
 		public String SecondSkill=
-		"W - ì‚´ì•„ìˆëŠ” ê·¸ë¦¼ì(Living Shadow)\r\n"
-	   +"ê¸°ë³¸ ì§€ì† íš¨ê³¼: ì œë“œì™€ ê·¸ë¦¼ìê°€ ê°™ì€ ìŠ¤í‚¬ë¡œ ë™ì¼í•œ ëŒ€ìƒì„ ê³µê²©í•  ë•Œë§ˆë‹¤ ì œë“œê°€ ê¸°ë ¥ì„ ì–»ìŠµë‹ˆë‹¤.\r\n"
-	   +"ì‚¬ìš© ì‹œ: ì œë“œì˜ ê·¸ë¦¼ìê°€ ì „ë°©ìœ¼ë¡œ ì§ˆì£¼í•˜ì—¬, 5ì´ˆê°„ ê·¸ ìë¦¬ì— ìœ ì§€ë©ë‹ˆë‹¤.\r\n"
-	   +"ì´ ìŠ¤í‚¬ì„ ì¬ì‚¬ìš©í•˜ë©´ ì œë“œê°€ ê·¸ë¦¼ìì™€ ìœ„ì¹˜ë¥¼ ë°”ê¿‰ë‹ˆë‹¤.";
+		"W - »ì¾ÆÀÖ´Â ±×¸²ÀÚ(Living Shadow)\r\n"
+	   +"±âº» Áö¼Ó È¿°ú: Á¦µå¿Í ±×¸²ÀÚ°¡ °°Àº ½ºÅ³·Î µ¿ÀÏÇÑ ´ë»óÀ» °ø°İÇÒ ¶§¸¶´Ù Á¦µå°¡ ±â·ÂÀ» ¾ò½À´Ï´Ù.\r\n"
+	   +"»ç¿ë ½Ã: Á¦µåÀÇ ±×¸²ÀÚ°¡ Àü¹æÀ¸·Î ÁúÁÖÇÏ¿©, 5ÃÊ°£ ±× ÀÚ¸®¿¡ À¯ÁöµË´Ï´Ù.\r\n"
+	   +"ÀÌ ½ºÅ³À» Àç»ç¿ëÇÏ¸é Á¦µå°¡ ±×¸²ÀÚ¿Í À§Ä¡¸¦ ¹Ù²ß´Ï´Ù.";
 		public String ThirdSkill=
-		"E - ê·¸ë¦¼ì ë² ê¸°(Shadow Slash)\r\n"
-	   +"ì œë“œì™€ ê·¸ë¦¼ìê°€ ê°ê° ì£¼ìœ„ ì ì„ ë² ì–´ ë¬¼ë¦¬ í”¼í•´ë¥¼ ì…í™ë‹ˆë‹¤.\r\n"
-	   +"ì œë“œê°€ ì´ ìŠ¤í‚¬ë¡œ ì  ì±”í”¼ì–¸ì„ í•˜ë‚˜ ë§í ë•Œë§ˆë‹¤ ì‚´ì•„ìˆëŠ” ê·¸ë¦¼ìì˜\r\n"
-	   +"ì¬ì‚¬ìš© ëŒ€ê¸°ì‹œê°„ì´ 2ì´ˆì”© ê°ì†Œí•©ë‹ˆë‹¤.\r\n"
-	   +"ê·¸ë¦¼ìì˜ ìŠ¤í‚¬ì— ë§ì€ ì ì€ 1.5ì´ˆ ë™ì•ˆ ë‘”í™”ë©ë‹ˆë‹¤.\r\n"
-	   +"ê·¸ë¦¼ì ë² ê¸°ë¡œ ë™ì¼í•œ ëŒ€ìƒì„ ì—¬ëŸ¬ ë²ˆ ë§í ê²½ìš°,\r\n"
-	   +"ì¶”ê°€ í”¼í•´ëŠ” ì…íˆì§€ ì•Šì§€ë§Œ 1.5ë°°ì˜ ë‘”í™” íš¨ê³¼ê°€ ì ìš©ë©ë‹ˆë‹¤.";
+		"E - ±×¸²ÀÚ º£±â(Shadow Slash)\r\n"
+	   +"Á¦µå¿Í ±×¸²ÀÚ°¡ °¢°¢ ÁÖÀ§ ÀûÀ» º£¾î ¹°¸® ÇÇÇØ¸¦ ÀÔÈü´Ï´Ù.\r\n"
+	   +"Á¦µå°¡ ÀÌ ½ºÅ³·Î Àû Ã¨ÇÇ¾ğÀ» ÇÏ³ª ¸ÂÈú ¶§¸¶´Ù »ì¾ÆÀÖ´Â ±×¸²ÀÚÀÇ\r\n"
+	   +"Àç»ç¿ë ´ë±â½Ã°£ÀÌ 2ÃÊ¾¿ °¨¼ÒÇÕ´Ï´Ù.\r\n"
+	   +"±×¸²ÀÚÀÇ ½ºÅ³¿¡ ¸ÂÀº ÀûÀº 1.5ÃÊ µ¿¾È µĞÈ­µË´Ï´Ù.\r\n"
+	   +"±×¸²ÀÚ º£±â·Î µ¿ÀÏÇÑ ´ë»óÀ» ¿©·¯ ¹ø ¸ÂÈú °æ¿ì,\r\n"
+	   +"Ãß°¡ ÇÇÇØ´Â ÀÔÈ÷Áö ¾ÊÁö¸¸ 1.5¹èÀÇ µĞÈ­ È¿°ú°¡ Àû¿ëµË´Ï´Ù.";
 		public String FourthSkill=
-		"ì œë“œê°€ ì ì‹œ ëŒ€ìƒì§€ì •ë¶ˆê°€ëŒ€ìƒìœ¼ë¡œ ì§€ì •í•  ìˆ˜ ì—†ëŠ” ìƒíƒœê°€ ë˜ì–´\r\n"
-	   +"ì  ì±”í”¼ì–¸ì—ê²Œ ëŒì§„í•˜ë©° í‘œì‹ì„ ë‚¨ê¹ë‹ˆë‹¤.\r\n"
-	   +"3ì´ˆê°€ ì§€ë‚˜ë©´ í‘œì‹ì´ ë°œë™ë˜ë©° ë¬¼ë¦¬ í”¼í•´ë¥¼ ì…íˆê³  í‘œì‹ì´ ì ìš©ëœ ë™ì•ˆ\r\n"
-	   +"ì œë“œê°€ ëŒ€ìƒì—ê²Œ ê°€í•œ í”¼í•´ì˜ ì¼ë¶€ì— í•´ë‹¹í•˜ëŠ” í”¼í•´ë¥¼ ì¶”ê°€ë¡œ ì…í™ë‹ˆë‹¤.\r\n"
-	   +"ëŒì§„ ì‹œ 7.5ì´ˆ ë™ì•ˆ ìœ ì§€ë˜ëŠ” ê·¸ë¦¼ìê°€ ë‚¨ìŠµë‹ˆë‹¤.\r\n"
-	   +"ì´ ìŠ¤í‚¬ì„ ì¬ì‚¬ìš©í•˜ë©´ ì œë“œê°€ ì´ ê·¸ë¦¼ìì™€ ìœ„ì¹˜ë¥¼ ë°”ê¿‰ë‹ˆë‹¤.";
+		"Á¦µå°¡ Àá½Ã ´ë»óÁöÁ¤ºÒ°¡´ë»óÀ¸·Î ÁöÁ¤ÇÒ ¼ö ¾ø´Â »óÅÂ°¡ µÇ¾î\r\n"
+	   +"Àû Ã¨ÇÇ¾ğ¿¡°Ô µ¹ÁøÇÏ¸ç Ç¥½ÄÀ» ³²±é´Ï´Ù.\r\n"
+	   +"3ÃÊ°¡ Áö³ª¸é Ç¥½ÄÀÌ ¹ßµ¿µÇ¸ç ¹°¸® ÇÇÇØ¸¦ ÀÔÈ÷°í Ç¥½ÄÀÌ Àû¿ëµÈ µ¿¾È\r\n"
+	   +"Á¦µå°¡ ´ë»ó¿¡°Ô °¡ÇÑ ÇÇÇØÀÇ ÀÏºÎ¿¡ ÇØ´çÇÏ´Â ÇÇÇØ¸¦ Ãß°¡·Î ÀÔÈü´Ï´Ù.\r\n"
+	   +"µ¹Áø ½Ã 7.5ÃÊ µ¿¾È À¯ÁöµÇ´Â ±×¸²ÀÚ°¡ ³²½À´Ï´Ù.\r\n"
+	   +"ÀÌ ½ºÅ³À» Àç»ç¿ëÇÏ¸é Á¦µå°¡ ÀÌ ±×¸²ÀÚ¿Í À§Ä¡¸¦ ¹Ù²ß´Ï´Ù.";
 		public int[] FirstSkillEnergyConsumption=new int[5];
 		public int FirstSkillRange=900;
 		public int FirstSkillCooldown=6;
@@ -100,12 +111,12 @@ class Abilities {
 		public double[] ThirdSkillDamage=new double[5];
 		public int FourthSkillRange=625;
 		public int[] FourthSkillCooldown=new int[3];
-		public double FourthSkillDamage;
+		public double FourthSkillDamage=300;
 		public double[] FourthSkillDamage2=new double[3];
-		public String FourthSkillRange2="ì œí•œì—†ìŒ";
+		public String FourthSkillRange2="Á¦ÇÑ¾øÀ½";
 		public int[] SkillLevel=new int[5];
-		public int AdditionalAttackDamage;
-		public int TotalAttackDamage;
+		public int AdditionalAttackDamage=100;
+		public int TotalAttackDamage=150;
 		
 		Skill() {
 			for(int i=0; i<SkillLevel.length; i++) {
@@ -114,97 +125,95 @@ class Abilities {
 			for(int i=0; i<5; i++) {
 				if(SkillLevel[i]==i+1) {
 					FirstSkillEnergyConsumption[i]=75-(i*5);
-					FirstSkillInitialDamage[i]=70+(i*35)+AdditionalAttackDamage;
-					FirstSkillPenetratingdamage[i]=42+(i*21)+AdditionalAttackDamage;
+					FirstSkillInitialDamage[i]=70+(i*35)+(1.1*AdditionalAttackDamage);
+					FirstSkillPenetratingdamage[i]=42+(i*21)+(0.66*AdditionalAttackDamage);
 					SecondSkillEnergyConsumption[i]=40-(i*5);
 					SecondSkillCooldown[i]=20-(i*1.5);
 					ThirdSkillCooldown[i]=5-(i*0.5);
-					ThirdSkillDamage[i]=65+(i*20);
-					FourthSkillCooldown[i]=120-(i*20);
-					FourthSkillDamage2[i]=FourthSkillDamage*(0.25+(i*0.15))+(TotalAttackDamage*0.65);				
+					ThirdSkillDamage[i]=65+(i*20);			
+				}
+			}
+			for(int j=0; j<3; j++) {
+				if(SkillLevel[j]==j+1) {
+					FourthSkillCooldown[j]=120-(j*20);
+					FourthSkillDamage2[j]=FourthSkillDamage*(0.25+(j*0.15))+(TotalAttackDamage*0.65);
 				}
 			}
 		}
 	}
 	class Rune {
 		public String DominationBuilds=
-		"í•µì‹¬ ë£¬ : ì§€ë°°\r\n"
-	   +"ê°ì „, í”¼ì˜ ë§›, ì‚¬ëƒ¥ì˜ ì¦í‘œ, ê¶ê·¹ì˜ ì‚¬ëƒ¥ê¾¼\r\n"
-	   +"ë³´ì¡° ë£¬ : ë§ˆë²•\r\n"
-	   +"ê¹¨ë‹¬ìŒ, ì£¼ë¬¸ì‘ì—´\r\n"
-	   +"ë³´ì¡° ë£¬ : ì •ë°€\r\n"
-	   +"ì¹¨ì°©, ê°•ì¸í•¨\r\n"
-	   +"ë³´ì¡° ë£¬ : ê²°ì˜1\r\n"
-	   +"ì¬ìƒì˜ ë°”ëŒ, ë¶ˆêµ´ì˜ ì˜ì§€\r\n"
-	   +"ë³´ì¡° ë£¬ : ê²°ì˜2\r\n"
-	   +"ë¼ˆ ë°©íŒ¨, ë¶ˆêµ´ì˜ ì˜ì§€";				
+		"ÇÙ½É ·é-Áö¹è(°¨Àü, ÇÇÀÇ ¸À, »ç³ÉÀÇ ÁõÇ¥, ±Ã±ØÀÇ »ç³É²Û)\r\n"
+	   +"º¸Á¶ ·é1-¸¶¹ı(±ú´ŞÀ½, ÁÖ¹®ÀÛ¿­)\r\n"	   
+	   +"º¸Á¶ ·é2-Á¤¹Ğ(Ä§Âø, °­ÀÎÇÔ)\r\n"
+	   +"º¸Á¶ ·é3-°áÀÇ1(Àç»ıÀÇ ¹Ù¶÷, ºÒ±¼ÀÇ ÀÇÁö)\r\n"
+	   +"º¸Á¶ ·é4-°áÀÇ2(»À ¹æÆĞ, ºÒ±¼ÀÇ ÀÇÁö)";				
 		public String PrecisionBuilds=
-		"í•µì‹¬ ë£¬ : ì •ë°€\r\n"
-	   +"ì •ë³µì, ì¹¨ì°©, ê°•ì¸í•¨, ìµœí›„ì˜ ì¼ê²©\r\n"
-	   +"ë³´ì¡° ë£¬ : ë§ˆë²•1\r\n"
-	   +"ë¹›ì˜ ë§í† , ê¹¨ë‹¬ìŒ\r\n"
-	   +"ë³´ì¡° ë£¬ : ë§ˆë²•2\r\n"
-	   +"ë¹›ì˜ ë§í† , ì£¼ë¬¸ ì‘ì—´";		
+		"ÇÙ½É ·é-Á¤¹Ğ(Á¤º¹ÀÚ, Ä§Âø, °­ÀÎÇÔ, ÃÖÈÄÀÇ ÀÏ°İ)\r\n"
+	   +"º¸Á¶ ·é1-¸¶¹ı1(ºûÀÇ ¸ÁÅä, ±ú´ŞÀ½)\r\n"
+	   +"º¸Á¶ ·é2-¸¶¹ı2(ºûÀÇ ¸ÁÅä, ÁÖ¹® ÀÛ¿­)"	;
 	}
 	class Item {
-		public String StartItems="ë¡±ì†Œë“œ\r\n"+"ë„ë€ì˜ ë°©íŒ¨+1í¬ì…˜";
-		public String MythicalItems="ì›”ì‹\r\n"+"ë“œë½ì‚¬ë¥´ì˜ í™©í˜¼ê²€\r\n"+"ìš”ìš°ë¬´ì˜ ìœ ë ¹ê²€";
+		public String StartItems="·Õ¼Òµå\r\n"+"µµ¶õÀÇ ¹æÆĞ+1Æ÷¼Ç";
+		public String MythicalItems="¿ù½Ä\r\n"+"µå¶ô»ç¸£ÀÇ È²È¥°Ë\r\n"+"¿ä¿ì¹«ÀÇ À¯·É°Ë";
 		public String AttackItems=
-		"ê·¸ë¦¼ì ê²€\r\n"
-	   +"ìê°ì˜ ë°œí†±\r\n"
-	   +"êµ¶ì£¼ë¦° íˆë“œë¼\r\n"
-	   +"ì¹ í‘ì˜ ì–‘ë‚  ë„ë¼\r\n"
-	   +"ì„¸ë¦´ë‹¤ì˜ ì›í•œ\r\n"
-	   +"ë…ì‚¬ì˜ ì†¡ê³³ë‹ˆ\r\n"
-	   +"ì§•ìˆ˜ì˜ ì´\r\n"
-	   +"ì›ì¹™ì˜ ì›í˜•ë‚«\r\n"
-	   +"ì‡¼ì§„ì˜ ì°½";
+		"±×¸²ÀÚ °Ë\r\n"
+	   +"ÀÚ°´ÀÇ ¹ßÅé\r\n"
+	   +"±¾ÁÖ¸° È÷µå¶ó\r\n"
+	   +"Ä¥ÈæÀÇ ¾ç³¯ µµ³¢\r\n"
+	   +"¼¼¸±´ÙÀÇ ¿øÇÑ\r\n"
+	   +"µ¶»çÀÇ ¼Û°÷´Ï\r\n"
+	   +"Â¡¼öÀÇ ÃÑ\r\n"
+	   +"¿øÄ¢ÀÇ ¿øÇü³´\r\n"
+	   +"¼îÁøÀÇ Ã¢";
 		public String DefensiveItems=
-		"ë°¤ì˜ ëìë½\r\n"
-	   +"ë§¬ëª¨ì…”ìŠ¤ì˜ ì•„ê·€\r\n"
-	   +"ìˆ˜í˜¸ ì²œì‚¬\r\n"
-	   +"ì€ë¹› ì—¬ëª…-ìˆ˜ì€ ì¥ì‹ë ";
+		"¹ãÀÇ ³¡ÀÚ¶ô\r\n"
+	   +"¸È¸ğ¼Å½ºÀÇ ¾Æ±Í\r\n"
+	   +"¼öÈ£ Ãµ»ç\r\n"
+	   +"Àººû ¿©¸í-¼öÀº Àå½Ä¶ì";
 		public String shoes=
-		"ëª…ì„í•¨ì˜ ì•„ì´ì˜¤ë‹ˆì•„ ì¥í™”\r\n"
-	   +"ê¸°ë™ë ¥ì˜ ì¥í™”\r\n"
-	   +"íŒê¸ˆì¥í™”\r\n"
-	   +"í—¤ë¥´ë©”ìŠ¤ì˜ ë°œê±¸ìŒ\r\n"
-	   +"ì‹ ì†ì˜ ì¥í™”";				
+		"¸í¼®ÇÔÀÇ ¾ÆÀÌ¿À´Ï¾Æ ÀåÈ­\r\n"
+	   +"±âµ¿·ÂÀÇ ÀåÈ­\r\n"
+	   +"ÆÇ±İÀåÈ­\r\n"
+	   +"Çì¸£¸Ş½ºÀÇ ¹ß°ÉÀ½\r\n"
+	   +"½Å¼ÓÀÇ ÀåÈ­";				
 	}
 	public class Zed {
 
-		public String Job="ì—­í• êµ° : ì•”ì‚´ì";
-		public String Belong="ì†Œì† : ì•„ì´ì˜¤ë‹ˆì•„";
-		public String BackGround="ë°°ê²½\r\n"
-	   +"ì œë“œëŠ” ê·¹ë„ë¡œ ë¬´ìë¹„í•˜ê³  ì¸ì •ì‚¬ì • ì—†ëŠ” ì¸ë¬¼ë¡œ,\r\n"
-	   +"ë…¹ì„œìŠ¤ ì¹¨ê³µêµ°ì„ ëª°ì•„ë‚´ê¸° ìœ„í•´ ì•„ì´ì˜¤ë‹ˆì•„ì˜ ì „í†µ ë§ˆë²•ê³¼ ë¬´ìˆ ì„ ì§‘ì•½ì‹œí‚¨ë‹¤ëŠ” ì˜ë„ë¡œ ì„¤ë¦½í•œ ê·¸ë¦¼ìë‹¨ì˜ ìˆ˜ì¥ì´ë‹¤.\r\n"
-	   +"ì•„ì´ì˜¤ë‹ˆì•„ ì „ìŸ ì¤‘ ì œë“œëŠ” ë…¹ì„œìŠ¤ì—ê²Œ ì´ê¸°ê³  ì‹¶ë‹¤ëŠ” ê°„ì ˆí•œ ë§ˆìŒì—ì„œ ê·¸ë¦¼ì ë¹„ê¸‰ì˜ ë´‰ì¸ì„ í•´ì œí•´ ë²„ë ¸ë‹¤.\r\n"		 
-	   +"ê·¸ ì‚¬ì•…í•œ ë¹„ê¸‰ì€ ê°•ë ¥í•œ ë§Œí¼ì´ë‚˜ ìœ„í—˜í•˜ê³ , ì‚¬ìš©ìë¥¼ íƒ€ë½ì˜ ê¸¸ë¡œ ë¹ ëœ¨ë¦¬ëŠ” ê²ƒì´ì—ˆë‹¤.\r\n"
-	   +"í•˜ì§€ë§Œ ì œë“œëŠ” ì•„ë‘ê³³í•˜ì§€ ì•Šê³  ëª¨ë“  ê¸ˆë‹¨ì˜ ë¹„ìˆ ì„ ìµí˜”ë‹¤.\r\n"
-	   +"ìì‹ ì˜ êµ­ê°€ì—, ì•„ë‹ˆë©´ ìì‹ ì´ ë§Œë“  ê·¸ë¦¼ìë‹¨ì— ìœ„í˜‘ì´ ë  ë§Œí•œ ê²ƒì„ ëª¨ì¡°ë¦¬ íŒŒê´´í•˜ê¸° ìœ„í•´.";
-		public String DamageType="ê³µê²©íƒ€ì… : ë¬¼ë¦¬(AD)";
-		public String Merit="ì¥ì \r\n"
-	   +"ê°•í•˜ê³  ì•ˆì •ì ì¸ ë¼ì¸ì „\r\n"
-	   +"ìš°ìˆ˜í•œ íŒŒë° ë° ê¸°ë™ì„±ì„ í†µí•œ ìš´ì˜ ëŠ¥ë ¥\r\n"
-	   +"ì‚´ì¸ì ì¸ ë‹¨ì¼ ëŒ€ìƒ ëˆ„í‚¹ ëŠ¥ë ¥\r\n"
-	   +"í™•ì •ì ì´ê³  ë¦¬ìŠ¤í¬ê°€ ì ì€ ì§„ì…\r\n"
-	   +"ê·¸ë¦¼ìë¥¼ í™œìš©í•œ ì–´ê·¸ë¡œ í•‘íê³¼ êµë€ ëŠ¥ë ¥\r\n"
-	   +"ìŠ¤í”Œë¦¿ í‘¸ì‹œì™€ ìŠ¤ë…¸ìš°ë³¼ë§ êµ¬ë„ì˜ ê°•ì„¸";
-		public String Disadvantages="ë‹¨ì \r\n"
-	   +"ë†’ì€ ì‚´ì•„ìˆëŠ” ê·¸ë¦¼ì(W) ì˜ì¡´ë„\r\n"
-	   +"ì·¨ì•½í•œ ê·¼ì ‘ì „ ë° ì „íˆ¬ ì§€ì†ë ¥\r\n"
-	   +"ë†’ì€ ê¶ê·¹ê¸° ì˜ì¡´ë„ì™€ ë§¤ì»¤ë‹ˆì¦˜ì˜ í•œê³„\r\n"
-	   +"ë¶€ì¡±í•œ íŒ€ ê¸°ì—¬ë„ì™€ ì·¨ì•½í•œ ëŒ€ì¹˜ì „ìœ¼ë¡œ ì¸í•œ ë‚®ì€ í•œíƒ€ ê¸°ì—¬ë„\r\n"
-	   +"ê¹Œë‹¤ë¡œìš´ ìš´ì˜ ë° ì¡°ì‘ ë‚œì´ë„ë¡œ ì¸í•œ íŒŒì¼ëŸ¿ ê°„ í¸ì°¨1";
-		public String Line="ë¼ì¸ : ë¯¸ë“œ";	
+		public String Job="¿ªÇÒ±º : ¾Ï»ìÀÚ";
+		public String Belong="¼Ò¼Ó : ¾ÆÀÌ¿À´Ï¾Æ";
+		public String BackGround="¹è°æ\r\n"
+	   +"Á¦µå´Â ±Øµµ·Î ¹«ÀÚºñÇÏ°í ÀÎÁ¤»çÁ¤ ¾ø´Â ÀÎ¹°·Î,\r\n"
+	   +"³ì¼­½º Ä§°ø±ºÀ» ¸ô¾Æ³»±â À§ÇØ ¾ÆÀÌ¿À´Ï¾ÆÀÇ ÀüÅë ¸¶¹ı°ú ¹«¼úÀ» Áı¾à½ÃÅ²´Ù´Â ÀÇµµ·Î ¼³¸³ÇÑ ±×¸²ÀÚ´ÜÀÇ ¼öÀåÀÌ´Ù.\r\n"
+	   +"¾ÆÀÌ¿À´Ï¾Æ ÀüÀï Áß Á¦µå´Â ³ì¼­½º¿¡°Ô ÀÌ±â°í ½Í´Ù´Â °£ÀıÇÑ ¸¶À½¿¡¼­ ±×¸²ÀÚ ºñ±ŞÀÇ ºÀÀÎÀ» ÇØÁ¦ÇØ ¹ö·È´Ù.\r\n"		 
+	   +"±× »ç¾ÇÇÑ ºñ±ŞÀº °­·ÂÇÑ ¸¸Å­ÀÌ³ª À§ÇèÇÏ°í, »ç¿ëÀÚ¸¦ Å¸¶ôÀÇ ±æ·Î ºü¶ß¸®´Â °ÍÀÌ¾ú´Ù.\r\n"
+	   +"ÇÏÁö¸¸ Á¦µå´Â ¾Æ¶û°÷ÇÏÁö ¾Ê°í ¸ğµç ±İ´ÜÀÇ ºñ¼úÀ» ÀÍÇû´Ù.\r\n"
+	   +"ÀÚ½ÅÀÇ ±¹°¡¿¡, ¾Æ´Ï¸é ÀÚ½ÅÀÌ ¸¸µç ±×¸²ÀÚ´Ü¿¡ À§ÇùÀÌ µÉ ¸¸ÇÑ °ÍÀ» ¸ğÁ¶¸® ÆÄ±«ÇÏ±â À§ÇØ.";
+		public String DamageType="°ø°İÅ¸ÀÔ : ¹°¸®(AD)";
+		public String Merit="ÀåÁ¡\r\n"
+	   +"°­ÇÏ°í ¾ÈÁ¤ÀûÀÎ ¶óÀÎÀü\r\n"
+	   +"¿ì¼öÇÑ ÆÄ¹Ö ¹× ±âµ¿¼ºÀ» ÅëÇÑ ¿î¿µ ´É·Â\r\n"
+	   +"»ìÀÎÀûÀÎ ´ÜÀÏ ´ë»ó ´©Å· ´É·Â\r\n"
+	   +"È®Á¤ÀûÀÌ°í ¸®½ºÅ©°¡ ÀûÀº ÁøÀÔ\r\n"
+	   +"±×¸²ÀÚ¸¦ È°¿ëÇÑ ¾î±×·Î ÇÎÆş°ú ±³¶õ ´É·Â\r\n"
+	   +"½ºÇÃ¸´ Çª½Ã¿Í ½º³ë¿ìº¼¸µ ±¸µµÀÇ °­¼¼";
+		public String Disadvantages="´ÜÁ¡\r\n"
+	   +"³ôÀº »ì¾ÆÀÖ´Â ±×¸²ÀÚ(W) ÀÇÁ¸µµ\r\n"
+	   +"Ãë¾àÇÑ ±ÙÁ¢Àü ¹× ÀüÅõ Áö¼Ó·Â\r\n"
+	   +"³ôÀº ±Ã±Ø±â ÀÇÁ¸µµ¿Í ¸ÅÄ¿´ÏÁòÀÇ ÇÑ°è\r\n"
+	   +"ºÎÁ·ÇÑ ÆÀ ±â¿©µµ¿Í Ãë¾àÇÑ ´ëÄ¡ÀüÀ¸·Î ÀÎÇÑ ³·Àº ÇÑÅ¸ ±â¿©µµ\r\n"
+	   +"±î´Ù·Î¿î ¿î¿µ ¹× Á¶ÀÛ ³­ÀÌµµ·Î ÀÎÇÑ ÆÄÀÏ·µ °£ ÆíÂ÷1";
+		public String Line="¶óÀÎ : ¹Ìµå";	
 		
 	public static void main(String[] args) {
-	    Zed zed=new Zed();	
+	    Zed zed=new Zed();
+	    System.out.println("Á¦µå(Zed) ±×¸²ÀÚÀÇ ÁÖÀÎ(the Master of Shadows)");
 	    System.out.println(zed.Job);
 	    System.out.println(zed.Belong);
 	    System.out.println(zed.BackGround);
 	    System.out.println();
 	    System.out.println(zed.DamageType);
+	    System.out.println();
 	    System.out.println(zed.Merit);
 	    System.out.println();
 	    System.out.println(zed.Disadvantages);
@@ -213,18 +222,101 @@ class Abilities {
 	    
 	    Scanner sc=new Scanner(System.in);
 	    Abilities abilities=new Abilities();
-	    System.out.println("ë ˆë²¨ì„ ì…ë ¥í•˜ì„¸ìš”(1~18)");
+	    System.out.println();
+	    System.out.println("´É·ÂÄ¡");
+	    System.out.println("·¹º§À» ÀÔ·ÂÇÏ¼¼¿ä(1~18)");
 	    int num =sc.nextInt();
-	    System.out.println("ì²´ë ¥ : "+abilities.Stamina[num]);
-	    System.out.println("ì²´ë ¥ ì¬ìƒ : "+abilities.StaminaRegeneration[num]);
-	    System.out.println("ê³µê²©ë ¥ : "+abilities.Damage[num]);
-	    System.out.println("ê³µê²©ì†ë„ : "+abilities.AttackSpeed[num]);
-//	    for (int i = 0; i < abilities.Stamina.length; i++) {
-//			System.out.println(abilities.Stamina[num]);
-//		}
-	    
-	
-	
+	    System.out.println("Ã¼·Â : "+abilities.Stamina[num-1]);
+	    System.out.println("Ã¼·Â Àç»ı : "+abilities.StaminaRegeneration[num-1]);
+	    System.out.println("±â·Â : "+abilities.Energy);
+	    System.out.println("±â·Â Àç»ı : "+abilities.EnergyRegeneration);
+	    System.out.println("°ø°İ·Â : "+abilities.Damage[num-1]);
+	    System.out.println("°ø°İ¼Óµµ : "+abilities.AttackSpeed[num-1]);
+        System.out.println("¹æ¾î·Â : "+abilities.Armor[num-1]);
+        System.out.println("¸¶¹ıÀúÇ×·Â : "+abilities.MagicResistance[num-1]);
+        System.out.println("»ç°Å¸® : "+abilities.Range);
+        System.out.println("ÀÌµ¿¼Óµµ : "+abilities.MovementSpeed);
+        System.out.println("Ã¨ÇÇ¾ğ ³­ÀÌµµ : "+abilities.Difficulty);
+        System.out.println("Ã¨ÇÇ¾ğ °ø°İ´É·Â : "+abilities.DamageAbility);
+        System.out.println("Ã¨ÇÇ¾ğ ¹æ¾î´É·Â : "+abilities.DefenseAbility);
+        System.out.println("±ºÁßÁ¦¾î´É·Â : "+abilities.CrowdControlAbility);
+        System.out.println("Ã¨ÇÇ¾ğ ÀÌµ¿´É·Â : "+abilities.MovementAbility);
+        System.out.println("Ã¨ÇÇ¾ğ º¸Á¶´É·Â : "+abilities.AssistiveAbility);
+        
+        Voice voice=new Voice();
+        System.out.println();
+        System.out.println("´ë»ç");
+        System.out.println();
+        System.out.println("¼±ÅÃ ½Ã ´ë»ç\r\n"+voice.PickVoice);
+        System.out.println();
+        System.out.println("ÀÌµ¿ ´ë»ç\r\n"+voice.MovementVoices);
+        System.out.println();
+        System.out.println("°ø°İ ´ë»ç\r\n"+voice.AttackVoices);
+       
+        Skill skill=new Skill();
+        System.out.println();
+        System.out.println("½ºÅ³");
+        System.out.println();
+        System.out.println("½ºÅ³ ·¹º§À» ÀÔ·ÂÇÏ¼¼¿ä(1~5)");
+        int num1=sc.nextInt();
+        System.out.println("ÆĞ½Ãºê½ºÅ³\r\n"+skill.PassiveSkill);
+        System.out.println();
+        System.out.println("Ã¹¹øÂ°½ºÅ³(Q)\r\n"+skill.FirstSkill);
+        System.out.println();
+        System.out.println("±â·Â¼Ò¸ğ·® : "+skill.FirstSkillEnergyConsumption[num1-1]);
+        System.out.println("»ç°Å¸® : "+skill.FirstSkillRange);
+        System.out.println("ÄğÅ¸ÀÓ : "+skill.FirstSkillCooldown);
+        System.out.println("Ç¥Ã¢ ÃÖÃÊ ÇÇÇØ·® : "+skill.FirstSkillInitialDamage[num1-1]);
+        System.out.println("Ç¥Ã¢ °üÅë ÇÇÇØ·® : "+skill.FirstSkillPenetratingdamage[num1-1]);
+        System.out.println();
+        System.out.println("µÎ¹øÂ°½ºÅ³(W)\r\n"+skill.SecondSkill);
+        System.out.println();
+        System.out.println("±â·Â¼Ò¸ğ·® : "+skill.SecondSkillEnergyConsumption[num1-1]);
+        System.out.println("»ç°Å¸® : "+skill.SecondSkillRange);
+        System.out.println("ÄğÅ¸ÀÓ : "+skill.SecondSkillCooldown[num1-1]);
+        System.out.println("±×¸²ÀÚ¿Í À§Ä¡¸¦ ¹Ù²Ü ¼ö ÀÖ´Â »ç°Å¸® : "+skill.SecondSkillRange2);
+        System.out.println("±×¸²ÀÚ Åõ»ç ¼Óµµ : "+skill.SecondSkillProjectionspeed);
+        System.out.println();
+        System.out.println("¼¼¹øÂ°½ºÅ³(E)\r\n"+skill.ThirdSkill);
+        System.out.println();
+        System.out.println("±â·Â¼Ò¸ğ·® : "+skill.ThirdSkillEnergyConsumption);
+        System.out.println("»ç°Å¸® : "+skill.ThirdSkillRange);
+        System.out.println("ÄğÅ¸ÀÓ : "+skill.ThirdSkillCooldown[num1-1]);
+        System.out.println("°ø°İ·Â : "+skill.ThirdSkillDamage[num1-1]);
+        System.out.println();
+        System.out.println("½ºÅ³ ·¹º§À» ÀÔ·ÂÇÏ¼¼¿ä(1~3)");
+        int num2=sc.nextInt();
+        System.out.println("³×¹øÂ°½ºÅ³(R)\r\n"+skill.FourthSkill);
+        System.out.println();
+        System.out.println("»ç°Å¸® : "+skill.FourthSkillRange);
+        System.out.println("ÄğÅ¸ÀÓ : "+skill.FourthSkillCooldown[num2-1]);
+        System.out.println("R±âº»+Ãß°¡ ÇÇÇØ·® : "+skill.FourthSkillDamage);
+        System.out.println("R2Â÷ ÇÇÇØ·® : "+skill.FourthSkillDamage2[num2-1]);
+        System.out.println("R±×¸²ÀÚÀÇ À§Ä¡ º¯°æ °¡´É ¹üÀ§ : "+skill.FourthSkillRange2);
+        System.out.println("R±âº»+Ãß°¡ ÇÇÇØ·® : "+skill.FourthSkillDamage);
+        
+        Rune rune=new Rune();
+        System.out.println();
+        System.out.println("·é");
+        System.out.println();
+        System.out.println("Áö¹èºôµå\r\n"+rune.DominationBuilds);
+        System.out.println();
+        System.out.println("Á¤¹Ğºôµå\r\n"+rune.PrecisionBuilds);
+        
+        Item item=new Item();
+        System.out.println();
+        System.out.println("¾ÆÀÌÅÛ");
+        System.out.println();
+        System.out.println("½ÃÀÛ ¾ÆÀÌÅÛ\r\n"+item.StartItems);
+        System.out.println();
+        System.out.println("½ÅÈ­±Ş ¾ÆÀÌÅÛ\r\n"+item.MythicalItems);
+        System.out.println();
+        System.out.println("°ø°İ ¾ÆÀÌÅÛ\r\n"+item.AttackItems);
+        System.out.println();
+        System.out.println("¹æ¾î ¾ÆÀÌÅÛ\r\n"+item.DefensiveItems);
+        System.out.println();
+        System.out.println("½Å¹ß\r\n"+item.shoes);
+        
 	
 	}
 }
