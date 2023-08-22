@@ -195,7 +195,7 @@ class Abilities {
 	   +"취약한 근접전 및 전투 지속력\r\n"
 	   +"높은 궁극기 의존도와 매커니즘의 한계\r\n"
 	   +"부족한 팀 기여도와 취약한 대치전으로 인한 낮은 한타 기여도\r\n"
-	   +"까다로운 운영 및 조작 난이도로 인한 파일럿 간 편차";
+	   +"까다로운 운영 및 조작 난이도로 인한 파일럿 간 편차1";
 		public String Line="라인 : 미드";	
 		
 	public static void main(String[] args) {
