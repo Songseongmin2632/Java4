@@ -3,10 +3,10 @@ package Homework.h230822;
 import java.util.Scanner;
 
 class Abilities {
-		public int[] Stamina=new int[18];
+		public int Stamina=18;
 		public double[] StaminaRegeneration=new double[18];
-		public int Energy=200;
-		public int EnergyRegeneration=50;
+		public int[] Energy=new int[18];
+		public double[] EnergyRegeneration=new double[18];
 		public double[] Damage=new double[18];
 		public double[] AttackSpeed=new double[18];
 		public double[] Armor=new double[18];
@@ -37,32 +37,7 @@ class Abilities {
 			}						
 		}				
 }
-
-	class Voice {
-		public String PickVoice="보이지 않는 검이 가장 무서운 법";
-		public String MovementVoices= 
-	    "소리없이.\r\n"
-	   +"금기 따윈 상관 안 해.\r\n"
-	   +"그림자단이여, 용감하게 진실을 찾아라.\r\n"
-	   +"가려진 길이라 해도 두려울 건 없어.\r\n"
-	   +"균형 같은 소리 하지 마.\r\n"
-	   +"비급이라니, 아껴 두면 무슨 소용이야.\r\n"
-	   +"그림자가 나를 일깨웠다.\r\n"
-	   +"균형은 약점일 뿐이야.\r\n"
-	   +"진실은 바로 어둠 속에 있지.\r\n"
-	   +"현명한 자라면 전통에 연연하지 않아.\r\n"
-	   +"엎지른 물은 주워담을 수 없어.";		
-		public String AttackVoices=
-	    "가치있는 자만 살아남는 거야.\r\n"
-	   +"나는 어둠 속에 숨은 검이다!\r\n"
-	   +"숨통을 끊어 주마.\r\n"
-	   +"속박의 굴레를 벗어.\r\n"
-	   +"가슴 속에 그림자가 있지.\r\n"		
-	   +"나를 부정하지 마.\r\n"
-	   +"엉뚱한 스승을 따랐군.\r\n"
-	   +"아무도 그림자를 피할 수 없다.\r\n"
-	   +"무지한 놈들.";		
-	}
+	
 	class Skill {
 		public String PassiveSkill=
 	    "약자 멸시(Contempt for the Weak)\r\n"
@@ -140,88 +115,30 @@ class Abilities {
 				}
 			}
 		}
-	}
-	class Rune {
-		public String DominationBuilds=
-		"핵심 룬-지배(감전, 피의 맛, 사냥의 증표, 궁극의 사냥꾼)\r\n"
-	   +"보조 룬1-마법(깨달음, 주문작열)\r\n"	   
-	   +"보조 룬2-정밀(침착, 강인함)\r\n"
-	   +"보조 룬3-결의1(재생의 바람, 불굴의 의지)\r\n"
-	   +"보조 룬4-결의2(뼈 방패, 불굴의 의지)";				
-		public String PrecisionBuilds=
-		"핵심 룬-정밀(정복자, 침착, 강인함, 최후의 일격)\r\n"
-	   +"보조 룬1-마법1(빛의 망토, 깨달음)\r\n"
-	   +"보조 룬2-마법2(빛의 망토, 주문 작열)"	;
-	}
-	class Item {
-		public String StartItems="롱소드\r\n"+"도란의 방패+1포션";
-		public String MythicalItems="월식\r\n"+"드락사르의 황혼검\r\n"+"요우무의 유령검";
-		public String AttackItems=
-		"그림자 검\r\n"
-	   +"자객의 발톱\r\n"
-	   +"굶주린 히드라\r\n"
-	   +"칠흑의 양날 도끼\r\n"
-	   +"세릴다의 원한\r\n"
-	   +"독사의 송곳니\r\n"
-	   +"징수의 총\r\n"
-	   +"원칙의 원형낫\r\n"
-	   +"쇼진의 창";
-		public String DefensiveItems=
-		"밤의 끝자락\r\n"
-	   +"맬모셔스의 아귀\r\n"
-	   +"수호 천사\r\n"
-	   +"은빛 여명-수은 장식띠";
-		public String shoes=
-		"명석함의 아이오니아 장화\r\n"
-	   +"기동력의 장화\r\n"
-	   +"판금장화\r\n"
-	   +"헤르메스의 발걸음\r\n"
-	   +"신속의 장화";				
-	}
+	}	
 	public class Zed {
 
 		public String Job="역할군 : 암살자";
 		public String Belong="소속 : 아이오니아";
 		public String BackGround="배경\r\n"
 	   +"제드는 극도로 무자비하고 인정사정 없는 인물로,\r\n"
-	   +"녹서스 침공군을 몰아내기 위해 아이오니아의 전통 마법과 무술을 집약시킨다는 의도로 설립한 그림자단의 수장이다.\r\n"
-	   +"아이오니아 전쟁 중 제드는 녹서스에게 이기고 싶다는 간절한 마음에서 그림자 비급의 봉인을 해제해 버렸다.\r\n"		 
-	   +"그 사악한 비급은 강력한 만큼이나 위험하고, 사용자를 타락의 길로 빠뜨리는 것이었다.\r\n"
-	   +"하지만 제드는 아랑곳하지 않고 모든 금단의 비술을 익혔다.\r\n"
-	   +"자신의 국가에, 아니면 자신이 만든 그림자단에 위협이 될 만한 것을 모조리 파괴하기 위해.";
-		public String DamageType="공격타입 : 물리(AD)";
-		public String Merit="장점\r\n"
-	   +"강하고 안정적인 라인전\r\n"
-	   +"우수한 파밍 및 기동성을 통한 운영 능력\r\n"
-	   +"살인적인 단일 대상 누킹 능력\r\n"
-	   +"확정적이고 리스크가 적은 진입\r\n"
-	   +"그림자를 활용한 어그로 핑퐁과 교란 능력\r\n"
-	   +"스플릿 푸시와 스노우볼링 구도의 강세";
-		public String Disadvantages="단점\r\n"
-	   +"높은 살아있는 그림자(W) 의존도\r\n"
-	   +"취약한 근접전 및 전투 지속력\r\n"
-	   +"높은 궁극기 의존도와 매커니즘의 한계\r\n"
-	   +"부족한 팀 기여도와 취약한 대치전으로 인한 낮은 한타 기여도\r\n"
-	   +"까다로운 운영 및 조작 난이도로 인한 파일럿 간 편차1";
+	   +"녹서스 침공군을 몰아내기 위해 아이오니아의 전통 마법과 무술을 집약시킨다는 의도로 설립한 그림자단의 수장이다.";	   	 	  
+		public String DamageType="공격타입 : 물리(AD)";		
 		public String Line="라인 : 미드";	
 		
 	public static void main(String[] args) {
 	    Zed zed=new Zed();
-	    System.out.println("제드(Zed) 그림자의 주인(the Master of Shadows)");
-	    System.out.println(zed.Job);
-	    System.out.println(zed.Belong);
-	    System.out.println(zed.BackGround);
+	    System.out.println("제드(Zed) 그림자의 주인(the Nine-Tailed Fox)");
+	    System.out.println(Zed.Job);
+	    System.out.println(Zed.Belong);
+	    System.out.println(Zed.BackGround);
 	    System.out.println();
-	    System.out.println(zed.DamageType);
-	    System.out.println();
-	    System.out.println(zed.Merit);
-	    System.out.println();
-	    System.out.println(zed.Disadvantages);
-	    System.out.println();
-	    System.out.println(zed.Line);
+	    System.out.println(Zed.DamageType);
+	    System.out.println();	    	    	    	    
+	    System.out.println(Zed.Line);
 	    
 	    Scanner sc=new Scanner(System.in);
-	    Abilities abilities=new Abilities();
+	    Abilities abilities=new Abilities();	   
 	    System.out.println();
 	    System.out.println("능력치");
 	    System.out.println("레벨을 입력하세요(1~18)");
@@ -242,25 +159,17 @@ class Abilities {
         System.out.println("군중제어능력 : "+abilities.CrowdControlAbility);
         System.out.println("챔피언 이동능력 : "+abilities.MovementAbility);
         System.out.println("챔피언 보조능력 : "+abilities.AssistiveAbility);
-        
-        Voice voice=new Voice();
-        System.out.println();
-        System.out.println("대사");
-        System.out.println();
-        System.out.println("선택 시 대사\r\n"+voice.PickVoice);
-        System.out.println();
-        System.out.println("이동 대사\r\n"+voice.MovementVoices);
-        System.out.println();
-        System.out.println("공격 대사\r\n"+voice.AttackVoices);
-       
+              
         Skill skill=new Skill();
         System.out.println();
         System.out.println("스킬");
         System.out.println();
         System.out.println("스킬 레벨을 입력하세요(1~5)");
         int num1=sc.nextInt();
+        
         System.out.println("패시브스킬\r\n"+skill.PassiveSkill);
         System.out.println();
+        
         System.out.println("첫번째스킬(Q)\r\n"+skill.FirstSkill);
         System.out.println();
         System.out.println("기력소모량 : "+skill.FirstSkillEnergyConsumption[num1-1]);
@@ -269,6 +178,7 @@ class Abilities {
         System.out.println("표창 최초 피해량 : "+skill.FirstSkillInitialDamage[num1-1]);
         System.out.println("표창 관통 피해량 : "+skill.FirstSkillPenetratingdamage[num1-1]);
         System.out.println();
+        
         System.out.println("두번째스킬(W)\r\n"+skill.SecondSkill);
         System.out.println();
         System.out.println("기력소모량 : "+skill.SecondSkillEnergyConsumption[num1-1]);
@@ -277,6 +187,7 @@ class Abilities {
         System.out.println("그림자와 위치를 바꿀 수 있는 사거리 : "+skill.SecondSkillRange2);
         System.out.println("그림자 투사 속도 : "+skill.SecondSkillProjectionspeed);
         System.out.println();
+        
         System.out.println("세번째스킬(E)\r\n"+skill.ThirdSkill);
         System.out.println();
         System.out.println("기력소모량 : "+skill.ThirdSkillEnergyConsumption);
@@ -284,8 +195,10 @@ class Abilities {
         System.out.println("쿨타임 : "+skill.ThirdSkillCooldown[num1-1]);
         System.out.println("공격력 : "+skill.ThirdSkillDamage[num1-1]);
         System.out.println();
+        
         System.out.println("스킬 레벨을 입력하세요(1~3)");
         int num2=sc.nextInt();
+        
         System.out.println("네번째스킬(R)\r\n"+skill.FourthSkill);
         System.out.println();
         System.out.println("사거리 : "+skill.FourthSkillRange);
@@ -293,30 +206,6 @@ class Abilities {
         System.out.println("R기본+추가 피해량 : "+skill.FourthSkillDamage);
         System.out.println("R2차 피해량 : "+skill.FourthSkillDamage2[num2-1]);
         System.out.println("R그림자의 위치 변경 가능 범위 : "+skill.FourthSkillRange2);
-        System.out.println("R기본+추가 피해량 : "+skill.FourthSkillDamage);
-        
-        Rune rune=new Rune();
-        System.out.println();
-        System.out.println("룬");
-        System.out.println();
-        System.out.println("지배빌드\r\n"+rune.DominationBuilds);
-        System.out.println();
-        System.out.println("정밀빌드\r\n"+rune.PrecisionBuilds);
-        
-        Item item=new Item();
-        System.out.println();
-        System.out.println("아이템");
-        System.out.println();
-        System.out.println("시작 아이템\r\n"+item.StartItems);
-        System.out.println();
-        System.out.println("신화급 아이템\r\n"+item.MythicalItems);
-        System.out.println();
-        System.out.println("공격 아이템\r\n"+item.AttackItems);
-        System.out.println();
-        System.out.println("방어 아이템\r\n"+item.DefensiveItems);
-        System.out.println();
-        System.out.println("신발\r\n"+item.shoes);
-        
-	
+        System.out.println("R기본+추가 피해량 : "+skill.FourthSkillDamage);               	
 	}
 }
